@@ -23,9 +23,9 @@ public class StoreApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Customer c1 = new Customer("Arthur", "arthur@gmai.com");
-		Customer c2 = new Customer("Deivit", "deivit@gmail.com");
-		Customer c3 = new Customer("Joao", "joao@gmail.com");
+		Customer c1 = new Customer(null, "Arthur", "arthur@gmai.com");
+		Customer c2 = new Customer(null, "Deivit", "deivit@gmail.com");
+		Customer c3 = new Customer(null, "Joao", "joao@gmail.com");
 		
 		customerRepository.saveAll(Arrays.asList(c1, c2, c3));
 	}
